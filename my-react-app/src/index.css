@@ -1,0 +1,253 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8f7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.dark {
+  color-scheme: dark;
+  color: #e2e8f0;
+  background: #0b1220;
+}
+
+html.dark body {
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+html.dark .bg-white,
+html.dark .bg-stone-50,
+html.dark .bg-stone-100,
+html.dark .bg-gray-50,
+html.dark .bg-gray-100,
+html.dark .bg-slate-50 {
+  background-color: #172033;
+}
+
+html.dark .bg-stone-200,
+html.dark .bg-slate-100,
+html.dark .bg-slate-200 {
+  background-color: #263449;
+}
+
+html.dark .bg-amber-50,
+html.dark .bg-amber-100 {
+  background-color: #422f16;
+}
+
+html.dark .bg-emerald-50,
+html.dark .bg-emerald-100 {
+  background-color: #123b32;
+}
+
+html.dark .bg-rose-50,
+html.dark .bg-rose-100 {
+  background-color: #452331;
+}
+
+html.dark .bg-blue-100 {
+  background-color: #193a5c;
+}
+
+html.dark .bg-gradient-to-br.from-amber-50.to-rose-50 {
+  background-image: linear-gradient(to bottom right, #2b241a, #34212a);
+}
+
+html.dark .bg-gradient-to-br.from-indigo-50.to-violet-50 {
+  background-image: linear-gradient(to bottom right, #20263c, #2c2340);
+}
+
+html.dark .bg-gradient-to-br.from-emerald-50.to-teal-50 {
+  background-image: linear-gradient(to bottom right, #15352f, #172f35);
+}
+
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600,
+html.dark .text-stone-900,
+html.dark .text-stone-800,
+html.dark .text-stone-700,
+html.dark .text-stone-600 {
+  color: #e2e8f0;
+}
+
+html.dark .text-slate-500,
+html.dark .text-gray-500,
+html.dark .text-stone-500 {
+  color: #aab8cc;
+}
+
+html.dark .text-slate-400,
+html.dark .text-gray-400,
+html.dark .text-stone-400 {
+  color: #94a3b8;
+}
+
+html.dark .text-violet-700,
+html.dark .text-violet-600 {
+  color: #c4b5fd;
+}
+
+html.dark .text-rose-700,
+html.dark .text-rose-600 {
+  color: #fda4af;
+}
+
+html.dark .text-emerald-700,
+html.dark .text-emerald-600 {
+  color: #6ee7b7;
+}
+
+html.dark .text-amber-700,
+html.dark .text-amber-600 {
+  color: #fcd34d;
+}
+
+html.dark .border-stone-100,
+html.dark .border-stone-200,
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-gray-100,
+html.dark .border-gray-200 {
+  border-color: #334155;
+}
+
+html.dark .border-violet-200,
+html.dark .border-emerald-200 {
+  border-color: #475569;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  color: #e2e8f0;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #94a3b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8f7f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Premium animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.4s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out;
+}
+
+.font-display {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
